@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="dist/bootstrap.min.css">
+    <style>
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
+
+        .hero img {
+            height: 100% !important;
+            display: block !important;
+        }
+       
+        .carousel-item{
+            height: 80vh !important;
+        }
+        .custom-card {
+            transition: all .3s ease-in-out;
+        }
+        .custom-card:hover {
+            transform: scale(.9);
+        }
+        .form-control:focus {
+            box-shadow: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="fixed-top">
+            <nav class="navbar navbar-expand-md bg-body-tertiary">
+                <div class="container">
+                    <a class="navbar-brand text-danger" href="#">JustCode</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    </header>
+
+    <section class="hero">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item w-100 active">
+                    <img  src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y29hZGluZ3xlbnwwfHwwfHx8MA%3D%3D" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://media.istockphoto.com/id/1401158734/photo/c-sharp-programming-language-source-code-example-on-monitor-and-bokeh-background-c-source.webp?b=1&s=170667a&w=0&k=20&c=XCvzZzqtbn38xLjVL5UVzRuMhioGRfmYCJ5yte3joAY=" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img  src="https://media.istockphoto.com/id/1430286027/photo/information-technology-businessman-working-on-computer-in-office-for-digital-app-software.webp?b=1&s=170667a&w=0&k=20&c=YFwXXbAFfDtX7-2iNcbH6N-ttS3CcnMt7rlUlwIXZ2g=" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <section class="services py-5">
+        <div class="container">
+            <div class="row pb-5">
+                <div class="col-12">
+                    <div class="header-content text-center">
+                        <h1 class="display-4 fw-semibold text-light-emphasis">Our services</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore maxime sequi amet voluptatum in soluta quis dolorem voluptas? Esse, earum.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-1">
+                <div class=" col-12 col-sm-6 col-md-3">
+                    <div class="card custom-card">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Web Design</h5>
+                          <i class="fa fa-laptop fa-3x"></i>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                </div>
+                <div class=" col-12  col-sm-6 col-md-3 ">
+                    <div class="card custom-card">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Web Design</h5>
+                          <i class="fa fa-facebook fa-3x"></i>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                </div>
+                <div class=" col-12  col-sm-6  col-md-3 ">
+                    <div class="card custom-card">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Web Design</h5>
+                          <i class="fa fa-twitter fa-3x"></i>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                </div>
+                <div class=" col-12  col-sm-6 col-md-3 ">
+                    <div class="card custom-card">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Web Design</h5>
+                          <i class="fa fa-laptop fa-3x"></i>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section>
+        <div class="container">
+            <div>
+                <h3  class="d-none d-lg-block">Show only desktop </h3>
+                <h3 class="d-block d-lg-none">Show in mobile</h3>
+            </div>
+        </div>
+    </section> -->
+    <section class=" py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Contact Us</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h2>Our Address</h2>
+                    <address>
+                        <p><strong>Company Name</strong></p>
+                        <p>123 Main Street</p>
+                        <p>City, State ZIP Code</p>
+                        <p>Phone: (123) 456-7890</p>
+                        <p>Email: info@example.com</p>
+                    </address>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container py-5 text-center">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Stay up-to-date with our latest news and updates.</p>
+    
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Your Email" aria-label="Your Email" aria-describedby="basic-addon2">
+                        <button class="btn btn-primary" type="button" id="basic-addon2">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="pb-5 bg-dark text-light pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                 <h3>Contact us </h3>
+                 <p>Kapasia , Gazipur <br> Email:test@gmail.com </p>
+
+                </div>
+                <div class="col-md-4">
+                    <h3>Quick links</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">Home</a></li>
+                        <li><a href="#" class="text-light">ABout</a></li>
+                        <li><a href="#" class="text-light">Contact</a></li>
+                        <li><a href="#" class="text-light">Services</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>Follow Us </h3>
+                    <ul class="list-unstyled d-flex gap-2">
+                        <li><a href="#" class="text-light"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" class="text-light"><i class="fa fa-github"></i></a></li>
+                        <li><a href="#" class="text-light"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" class="text-light"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
